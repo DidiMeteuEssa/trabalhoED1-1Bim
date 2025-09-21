@@ -133,7 +133,7 @@ int main()
 			gotoxy(12, 27);
 			printf("Pressione qualquer tecla para encerrar...\n");
 
-			Sleep(10);
+			Sleep(1000);
 
 			if (emAtendimento.id != -1)
 			{
@@ -142,8 +142,6 @@ int main()
 				if (tempoRestante <= 0)
 				{
 					totalTempoAtendimento += tempoPacienteAtual;
-					gotoxy(1,34);
-					printf("%d", totalTempoAtendimento);
 					atendimentos++;
 					contAtendidos++;
 
@@ -154,6 +152,7 @@ int main()
 					}
 
 					gotoxy(61, 6 + linhaAtualAtentido);
+					textcolor(15);
 					printf("%s ID: %d, Priori.: %d Tempo: %d ut\n", emAtendimento.nome, emAtendimento.id, emAtendimento.prioridade, tempoPacienteAtual);
 					linhaAtualAtentido++;
 
