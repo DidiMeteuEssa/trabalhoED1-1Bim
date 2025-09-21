@@ -85,7 +85,7 @@ void molduraSistema()
     printf("                               TRABALHO DE ED1 - FILA DE ATENDIMENTO");
 
     gotoxy(11, 29);
-    printf("                           DIEGO FELIPPE DA F. CALESCO / JOAO GABRIEL                          ");
+    printf("                      DIEGO FELIPPE DA F. CALESCO / JOAO GABRIEL DA SILVA                  ");
 
     textcolor(14);
     gotoxy(12, 4);
